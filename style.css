@@ -1,7 +1,13 @@
+*{
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+}
 img{
 width: 100px;
 height: auto;
 float: right;
 border-radius: 10px;
-position: absolute;
+margin: 10px;
+margin-top: -120px;
 }
+
