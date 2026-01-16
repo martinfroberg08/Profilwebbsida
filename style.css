@@ -1,13 +1,40 @@
-*{
-    background-color: aqua;
-    font-family: Arial, sans-serif;
-}
-img{
-width: 100px;
-height: auto;
-float: right;
-border-radius: 10px;
-margin: 10px;
-margin-top: -120px;
+:root {
+  --bg-color: aqua;
+  --text-color: black;
+  --button-bg: darkblue;
+  --button-text: white;
 }
 
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+img {
+    width: 100px;
+    height: auto;
+    float: right;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: -120px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+    --button-bg: lightgray;
+    --button-text: black;
+}
