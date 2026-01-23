@@ -38,3 +38,10 @@ body.dark-mode {
     --button-bg: lightgray;
     --button-text: black;
 }
+
+svg {
+    width: 35px;
+    height: auto;
+    float: left;
+    fill: var(--text-color);
+}
