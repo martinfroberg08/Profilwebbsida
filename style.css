@@ -24,12 +24,29 @@ img {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     cursor: pointer;
     background-color: var(--button-bg);
     color: var(--button-text);
     transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--button-text);
+    margin: 0;
+    float: none;
 }
 
 body.dark-mode {
@@ -37,11 +54,4 @@ body.dark-mode {
     --text-color: white;
     --button-bg: lightgray;
     --button-text: black;
-}
-
-svg {
-    width: 35px;
-    height: auto;
-    float: left;
-    fill: var(--text-color);
 }

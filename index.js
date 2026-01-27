@@ -18,6 +18,16 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
+localStorage.setItem("lastVisit", new Date().toISOString());
+const TWo_DAYS_MS = 2 * 24 * 60 * 60 * 1000;
+const lastVisit = localStorage.getItem("lastVisit");
+if (lastVisit) {
+  const lastVisitDate = new Date(lastVisit);
+  const now = new Date(); 
+  if (now - lastVisitDate > TWo_DAYS_MS) 
+    alert("Welcome back! It's been more than two days since your last visit.");
+}
+
 const yearSpan = document.querySelector('#currentYear');
 const currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
